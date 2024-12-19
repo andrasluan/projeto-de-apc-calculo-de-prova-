@@ -1,0 +1,32 @@
+#include <stdio.h>
+void main(){
+//definição das variáveis 
+float p1,p2,t1,t2, mp, mt, mf;
+
+//entrada de dados
+printf ("nota da prova 1?:");
+scanf ("%f", &p1);
+
+printf ("nota da prova 2?:");
+scanf ("%f", &p2);
+
+printf ("nota do trabalho 1?:");
+scanf ("%f", &t1);
+
+printf ("nota do trabalho 2:");
+scanf ("%f", &t2);
+//cálculo de média 
+mp = (p1 + p2)/2;
+
+mt = (t1 + t2)/2;
+
+mf =(0.8 * mp + 0.2 * mt);
+//registro de boletim
+printf ("media final:%f.2\n", mf);
+if (mf >= 6.0){
+   printf ("vc foi aprovado\n");
+}else if (mf <= 6.0){
+printf ("vc foi reprovado\n");
+
+}
+}
